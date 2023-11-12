@@ -1298,12 +1298,19 @@
   dependencies:
     "semver" "^7.3.5"
 
-"powerbi-visuals-api@~5.3.0":
+"powerbi-visuals-api@~5.3.0", "powerbi-visuals-api@5.3.0":
   "integrity" "sha512-vtn8a4zV7Iwf/a0ri9LbKcJSjYmSf7XuM8aiENz+oqTa5S0sLuLBP/+O0XDMhg9Qb2sCe43O5KUVAXfk4Vjv2w=="
   "resolved" "https://registry.npmjs.org/powerbi-visuals-api/-/powerbi-visuals-api-5.3.0.tgz"
   "version" "5.3.0"
   dependencies:
     "semver" "^7.3.5"
+
+"powerbi-visuals-utils-dataviewutils@^6.0.1":
+  "integrity" "sha512-oJYW6L3s04yQqTNMTvIDTkiLjpd+tU1tqie3N2F9L3Gv1TTG1GMmgdsDedPgYoaf3+oXy+QKlm2RHwy3wofp7w=="
+  "resolved" "https://registry.npmjs.org/powerbi-visuals-utils-dataviewutils/-/powerbi-visuals-utils-dataviewutils-6.0.1.tgz"
+  "version" "6.0.1"
+  optionalDependencies:
+    "fsevents" "*"
 
 "powerbi-visuals-utils-formattingmodel@5.0.0":
   "integrity" "sha512-6Yh9DRXadqCZ2T0xnX9dvJEBB8uOdGi2dRUC7lY1GXGjA3jkrbJtJdr9z7ivzmKabjuaFw//8C8gPuP54LqOAw=="
@@ -1311,6 +1318,24 @@
   "version" "5.0.0"
   dependencies:
     "powerbi-visuals-api" "~5.1.0"
+
+"powerbi-visuals-utils-formattingutils@^6.0.1":
+  "integrity" "sha512-H44aLbiEvWXenwCo9CtuRWbJ1Yz5FSBCuzU3gGd/vNONjYZnmWTdKAapWHv2UqdqN8i9phFkKQMg9WZ4p4a+JQ=="
+  "resolved" "https://registry.npmjs.org/powerbi-visuals-utils-formattingutils/-/powerbi-visuals-utils-formattingutils-6.0.1.tgz"
+  "version" "6.0.1"
+  dependencies:
+    "powerbi-visuals-api" "5.3.0"
+    "powerbi-visuals-utils-dataviewutils" "^6.0.1"
+    "powerbi-visuals-utils-typeutils" "^6.0.1"
+  optionalDependencies:
+    "fsevents" "*"
+
+"powerbi-visuals-utils-typeutils@^6.0.1":
+  "integrity" "sha512-GU2sshtsf9o54x5ThgeMGUhe5hrtrb/37hxWsQjotmEVDHFyP1Q//iq9DngceYUPIBHo/dqveM9ABsoCdqf0eQ=="
+  "resolved" "https://registry.npmjs.org/powerbi-visuals-utils-typeutils/-/powerbi-visuals-utils-typeutils-6.0.1.tgz"
+  "version" "6.0.1"
+  optionalDependencies:
+    "fsevents" "*"
 
 "prelude-ls@^1.2.1":
   "integrity" "sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g=="
@@ -1467,10 +1492,10 @@
   "resolved" "https://registry.npmjs.org/type-fest/-/type-fest-0.20.2.tgz"
   "version" "0.20.2"
 
-"typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta", "typescript@4.9.3":
-  "integrity" "sha512-CIfGzTelbKNEnLpLdGFgdyKhG23CKdKgQPOBc+OUNrkJ2vr+KSzsSV5kq5iWhEQbok+quxgGzrAtGWCyU7tHnA=="
-  "resolved" "https://registry.npmjs.org/typescript/-/typescript-4.9.3.tgz"
-  "version" "4.9.3"
+"typescript@^5.2.2", "typescript@>=2.8.0 || >= 3.2.0-dev || >= 3.3.0-dev || >= 3.4.0-dev || >= 3.5.0-dev || >= 3.6.0-dev || >= 3.6.0-beta || >= 3.7.0-dev || >= 3.7.0-beta":
+  "integrity" "sha512-mI4WrpHsbCIcwT9cF4FZvr80QUeKvsUsUvKDoR+X/7XHQH98xYD8YHZg7ANtz2GtZt/CBq2QJ0thkGJMHfqc1w=="
+  "resolved" "https://registry.npmjs.org/typescript/-/typescript-5.2.2.tgz"
+  "version" "5.2.2"
 
 "uri-js@^4.2.2":
   "integrity" "sha512-7rKUyy33Q1yc98pQ1DAmLtwX109F7TIfWlW1Ydo8Wl1ii1SeHieeh0HHfPeL2fMXK6z0s8ecKs9frCuLJvndBg=="
